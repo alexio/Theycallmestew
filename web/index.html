@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS3 Buttons</title>
+</head>
+<body>
+    <audio id="Mp3Me" autoplay autobuffer controls>
+		<source src="Piano.mp3">
+	</audio>
+	<a href="javascript:GuitarTrack();">TheyCallMeStew</a>
+
+	<script type="text/javascript">
+	function GuitarTrack(){
+	    var Mp3Me= document.getElementById('Mp3Me');
+	    Mp3Me.children[0].src = "stewart.mp3";
+	    Mp3Me.load();
+	}
+	</script>
+</body>
+</html>	
